@@ -376,6 +376,7 @@ public class CrashHandler implements UncaughtExceptionHandler
         {
             // TODO Auto-generated catch block
             e.printStackTrace();
+
         }
     }
 
