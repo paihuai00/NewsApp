@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10px"
+    android:paddingBottom="15px"
+    android:id="@+id/tab_layout">
+
+    <ImageView
+        android:id="@+id/tab_img"
+        android:layout_width="wrap_content"
+        android:layout_height="60px"
+        android:clickable="false"
+        android:scaleType="fitXY"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_marginTop="10px"
+        android:id="@+id/tab_txt"
+        android:textSize="@dimen/textsize_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/bottom_color_normal"
+        android:clickable="false"
+        />
+
+</com.zhy.autolayout.AutoLinearLayout>

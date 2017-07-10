@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.csx.newsapp.widget.actionbar.MainTopBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/barhetiht"
+        android:id="@+id/web_topbar"
+        android:background="@color/colorPrimary"
+        app:isShowLeftImg="true"
+        app:isShowMiddleTxt="true"
+        app:middleTxt="精选详情"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="15px"
+        android:id="@+id/web_progressbar"
+        android:layout_below="@+id/web_topbar"
+        android:max="100"
+        android:layout_marginTop="-5dip"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar_drawable"/>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/web_topbar"
+        android:id="@+id/wechat_webview"/>
+</com.zhy.autolayout.AutoLinearLayout>

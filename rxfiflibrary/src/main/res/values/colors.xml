@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--白色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 主色-->
+    <color name="theme_color">#4CB4E1</color>
+    <!-- 普通文字颜色-->
+    <color name="noraml_color">#f00ff0</color>
+    <!-- 黑色-->
+    <color name="black">#000000</color>
+    <!-- 灰色的线-->
+    <color name="gray_line">#333</color>
+    <!-- 灰色的背景-->
+    <color name="gray_background">#f3f6f5</color>
+    <!-- 蓝色的背景-->
+    <color name="blue_background">#5ac2e7</color>
+    <!-- 红色的字-->
+    <color name="red_text">#f48896</color>
+    <!-- 深红色的字-->
+    <color name="dark_red_text">#ed5564</color>
+    <!-- 深红色的背景-->
+    <color name="dark_red_background">#ed5565</color>
+    <!-- 屎黄色的背景-->
+    <color name="dark_yellow_background">#ffce54</color>
+    <!-- 深蓝色的字-->
+    <color name="dark_blue_text">#5d9cec</color>
+    <!-- 蓝色的pressuretitle-->
+    <color name="dark_blue_title_background">#3d9bbf</color>
+    <!-- 蓝色的title-->
+    <color name="blue_title_background">#3baeda</color>
+    <!-- 绿色的字-->
+    <color name="green_text">#a0d468</color>
+    <!-- 绿色的背景-->
+    <color name="pink_background">#ec87c0</color>
+    <!-- 浅灰色的字-->
+    <color name="light_gray_text">#cccccc</color>
+
+</resources>

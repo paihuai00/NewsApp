@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--首页下面的 Tab-->
+    <declare-styleable name="MainBottomView">
+        <attr name="bottom_img" format="reference" />
+
+        <attr name="bottom_txt" format="string" />
+    </declare-styleable>
+
+    <!--TopBar-->
+    <declare-styleable name="MainTopBar">
+        <attr name="isShowLeftImg" format="boolean" />
+        <attr name="isShowMiddleTxt" format="boolean" />
+        <attr name="isShowRightView" format="boolean" />
+        <attr name="middleTxt" format="reference|string" />
+        <attr name="rightView" format="reference" />
+    </declare-styleable>
+
+</resources>

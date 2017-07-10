@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--主界面下面的按钮相关-->
+    <color name="bottom_color_normal">#797e89</color>
+    <color name="stroke_color">#D5D4D5</color>
+
+    <color name="gray_color">#ADADAD</color>
+
+    <color name="deep_blue">#676bff</color>
+
+    <color name="deep_purple">#b148ed</color>
+
+    <color name="item_divider">#EFEFEF</color>
+
+    <color name="gray_txt">#aaaaaa</color>
+
+    <color name="deep_yellow">#FF8C00</color>
+</resources>

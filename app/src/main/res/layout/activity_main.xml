@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/main_toolbar"
+        android:background="@color/colorPrimaryDark"
+        app:titleTextColor="@android:color/white"
+        />
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:id="@+id/main_framelayout"/>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/barhetiht"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_main_bottom">
+
+        <com.csx.newsapp.widget.MainBottomView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/main_tab"
+            app:bottom_img="@drawable/ic_home_normal"
+            app:bottom_txt="@string/tab_main"
+            />
+
+        <com.csx.newsapp.widget.MainBottomView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/photo_tab"
+            app:bottom_img="@drawable/ic_girl_normal"
+            app:bottom_txt="@string/tab_photo"/>
+
+        <com.csx.newsapp.widget.MainBottomView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/mine_tab"
+            app:bottom_img="@drawable/ic_care_normal"
+            app:bottom_txt="@string/tab_mine"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
