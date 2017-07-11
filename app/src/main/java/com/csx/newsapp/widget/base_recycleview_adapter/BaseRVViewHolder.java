@@ -33,6 +33,7 @@ public class BaseRVViewHolder extends RecyclerView.ViewHolder {
 
     //根据Item中的控件Id获取控件
     public <T extends View> T getView(int viewId){
+        //使用SparseArray进行优化
         View childreView = viewSparseArray.get(viewId);
         if (childreView == null){
             childreView = itemView.findViewById(viewId);

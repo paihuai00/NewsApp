@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -19,6 +19,18 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/photoView"
-        android:scaleType="fitXY"/>
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/barhetiht"/>
 
-</com.zhy.autolayout.AutoLinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/download_fab"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="@dimen/textsize_50"
+        android:layout_marginBottom="@dimen/textsize_50"
+        android:src="@drawable/ic_download_white"
+        app:backgroundTint="@color/colorPrimary"
+        />
+
+</android.support.design.widget.CoordinatorLayout>

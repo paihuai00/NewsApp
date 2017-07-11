@@ -16,6 +16,8 @@ import java.util.List;
 
 /**
  * Created by cuishuxiang on 2017/7/11.
+ *
+ *  照片adapter ，使用封装的adapter
  */
 
 public class PhotoAdaper extends BaseRecyclerViewAdapter<PhotoBean.ResultsBean> {
@@ -30,7 +32,6 @@ public class PhotoAdaper extends BaseRecyclerViewAdapter<PhotoBean.ResultsBean> 
     @Override
     public void onBind(BaseRVViewHolder holder, final PhotoBean.ResultsBean resultsBean, final int position) {
         ImageView imageView = holder.getView(R.id.photo_img);
-
         Glide.with(context)
                 .load(resultsBean.getUrl())
                 .error(R.drawable.ic_empty_picture)

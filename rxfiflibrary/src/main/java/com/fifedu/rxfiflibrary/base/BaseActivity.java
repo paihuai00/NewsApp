@@ -167,7 +167,6 @@ public abstract class BaseActivity<T extends BasePresenter, E extends BaseModel>
             params2.height = statusBarHeight;
             statusBar.setLayoutParams(params2);
             statusBar.setVisibility(View.VISIBLE);
-
         }
     }
 
