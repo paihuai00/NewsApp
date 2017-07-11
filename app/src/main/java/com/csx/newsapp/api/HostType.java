@@ -31,6 +31,6 @@ public class HostType {
     /**
      * 今日头条 host
      */
-    public static final int TOP_NEWS = 2;
+    public static final int PHOTO = 2;
 
 }

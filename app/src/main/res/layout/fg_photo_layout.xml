@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mSwipe">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/photo_rv"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="照片fg"/>
-</com.zhy.autolayout.AutoLinearLayout>
+        android:id="@+id/fab_btn"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/textsize_50"
+        android:layout_marginRight="@dimen/textsize_50"
+        android:src="@drawable/ic_arrow_upward"
+        app:backgroundTint="@color/colorPrimary"/>
+
+</android.support.design.widget.CoordinatorLayout>

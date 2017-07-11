@@ -31,6 +31,10 @@
             android:name=".ui.main.activity.WeChatWebViewActivity"
             android:screenOrientation="portrait" />
 
+        <!--照片查看详情-->
+        <activity android:name=".ui.main.activity.PhotoDeatilActivity"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

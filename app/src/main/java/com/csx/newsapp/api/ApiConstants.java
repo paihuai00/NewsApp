@@ -19,12 +19,11 @@ package com.csx.newsapp.api;
 public class ApiConstants {
     public static final String WE_CHAT = "http://v.juhe.cn/";
 
-    //http://v.juhe.cn/toutiao/index?type=top&key=f6d595a6bfdf1d565662070090d2c7ba
-    public static final String TOP_NEWS = "http://v.juhe.cn/toutiao/";
+    //http://gank.io/api/data/%E7%A6%8F%E5%88%A9/7/10
+    public static final String PHOTO = "http://gank.io/api/data/%E7%A6%8F%E5%88%A9/";
 
     /**
      * 获取对应的host
-     *
      * @param hostType host类型
      * @return host
      */
@@ -35,10 +34,10 @@ public class ApiConstants {
                 host = WE_CHAT;
                 break;
 
-            case HostType.TOP_NEWS:
-                host = TOP_NEWS;
-
+            case HostType.PHOTO:
+                host = PHOTO;
                 break;
+
             default:
                 host = "";
                 break;

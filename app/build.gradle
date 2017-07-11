@@ -31,4 +31,7 @@ dependencies {
     compile project(':rxfiflibrary')
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    //图片查看器
+    compile 'com.github.chrisbanes:PhotoView:2.0.0'
 }

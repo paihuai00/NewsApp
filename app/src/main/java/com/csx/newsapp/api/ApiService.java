@@ -1,10 +1,12 @@
 package com.csx.newsapp.api;
 
+import com.csx.newsapp.bean.PhotoBean;
 import com.csx.newsapp.bean.TopNewsBean;
 import com.csx.newsapp.bean.WechatBean;
 
 import retrofit2.http.GET;
 import retrofit2.http.Query;
+import retrofit2.http.Url;
 import rx.Observable;
 
 /**
@@ -35,6 +37,13 @@ public interface ApiService {
             @Query("key") String key,
             @Query("top") String topstring
     );
+
+    /**
+     * 图片
+     * http://gank.io/api/data/%E7%A6%8F%E5%88%A9/7/10
+     */
+    @GET
+    Observable<PhotoBean> getPhotos(@Url String url);
 
 //    //登陆 usr_name=2016010101&usr_pwd=123456&role_enname=student
 //    @GET("userCenter/userLogin")
