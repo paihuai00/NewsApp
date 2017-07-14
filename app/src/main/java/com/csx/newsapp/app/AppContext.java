@@ -33,6 +33,13 @@ public class AppContext extends BaseApplication {
         init();
         initLogin();
 //        initPlatform();
+
+        initBmob();
+    }
+
+    private void initBmob() {
+        //第一：默认初始化
+//        Bmob.initialize(this, "7ff5db811c75c6aed64e5da46a675c1e");
     }
 
     private void initlog(){

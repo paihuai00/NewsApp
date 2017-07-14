@@ -5,21 +5,29 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
-    <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/main_toolbar"
-        android:background="@color/colorPrimaryDark"
-        app:titleTextColor="@android:color/white"
-        />
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--android:id="@+id/main_toolbar"-->
+            <!--app:layout_scrollFlags="scroll|enterAlwaysCollapsed"-->
+            <!--android:background="@color/colorPrimaryDark"-->
+            <!--app:titleTextColor="@android:color/white"-->
+            <!--/>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
 
     <com.zhy.autolayout.AutoFrameLayout
         android:layout_width="match_parent"
         android:layout_height="0px"
         android:layout_weight="1"
-        android:id="@+id/main_framelayout"/>
+        android:id="@+id/main_framelayout" />
 
+    <!--下面的三个tab-->
     <com.zhy.autolayout.AutoLinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/barhetiht"

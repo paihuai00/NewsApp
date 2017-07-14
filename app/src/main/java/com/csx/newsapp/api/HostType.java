@@ -33,4 +33,13 @@ public class HostType {
      */
     public static final int PHOTO = 2;
 
+    /**
+     * 知乎
+     */
+    public static final int ZHIHU = 3;
+
+    /**
+     * 知乎 inner
+     */
+    public static final int ZHIHU_INNER = 4;
 }

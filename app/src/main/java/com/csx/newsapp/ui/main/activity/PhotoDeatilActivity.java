@@ -81,7 +81,7 @@ public class PhotoDeatilActivity extends BaseActivity implements TopBarImp {
 
         if (!TextUtils.isEmpty(img_url)) {
             if (isDownLoad(img_url)) {
-                downloadFab.setImageResource(R.drawable.ic_check_white);
+                downloadFab.setImageResource(R.drawable.ic_done_white);
             }else {
                 downloadFab.setImageResource(R.drawable.ic_download_white);
             }
@@ -156,7 +156,7 @@ public class PhotoDeatilActivity extends BaseActivity implements TopBarImp {
             public void call(String s) {
                 if ("Download Success".equals(s)) {
                     LogUtil.debug(TAG, "接收到下载完成的消息！");
-                    downloadFab.setImageResource(R.drawable.ic_check_white);
+                    downloadFab.setImageResource(R.drawable.ic_done_white);
                 }
             }
         });

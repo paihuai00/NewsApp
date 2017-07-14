@@ -34,4 +34,9 @@ dependencies {
 
     //图片查看器
     compile 'com.github.chrisbanes:PhotoView:2.0.0'
+
+//    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+
+    //富文本，显示html
+    compile 'com.zzhoujay.richtext:richtext:2.5.1'
 }

@@ -22,6 +22,15 @@ public class ApiConstants {
     //http://gank.io/api/data/%E7%A6%8F%E5%88%A9/7/10
     public static final String PHOTO = "http://gank.io/api/data/%E7%A6%8F%E5%88%A9/";
 
+
+    //知乎api http://news-at.zhihu.com/api/4/news/latest
+    public static final String ZHI_HU = "http://news-at.zhihu.com/api/4/news/";
+    //知乎 inner http://news-at.zhihu.com/api/4/news/9520494
+    public static final String ZHIHU_INNER = "http://news-at.zhihu.com/api/4/news/";
+
+    public static final String HOME_CURRENT_TAB_POSITION="HOME_CURRENT_TAB_POSITION";
+    public static final String MENU_SHOW_HIDE="MENU_SHOW_HIDE";
+
     /**
      * 获取对应的host
      * @param hostType host类型
@@ -36,6 +45,12 @@ public class ApiConstants {
 
             case HostType.PHOTO:
                 host = PHOTO;
+                break;
+            case HostType.ZHIHU:
+                host = ZHI_HU;
+                break;
+            case HostType.ZHIHU_INNER:
+                host = ZHIHU_INNER;
                 break;
 
             default:

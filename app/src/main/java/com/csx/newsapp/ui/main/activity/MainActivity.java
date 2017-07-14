@@ -2,7 +2,6 @@ package com.csx.newsapp.ui.main.activity;
 
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.csx.newsapp.R;
@@ -12,7 +11,6 @@ import com.csx.newsapp.ui.main.fragment.PhotoFragment;
 import com.csx.newsapp.widget.MainBottomView;
 import com.fifedu.rxfiflibrary.base.BaseActivity;
 import com.zhy.autolayout.AutoFrameLayout;
-import com.zhy.autolayout.AutoLinearLayout;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -24,8 +22,8 @@ import butterknife.OnClick;
 public class MainActivity extends BaseActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    @BindView(R.id.main_toolbar)
-    Toolbar mainToolbar;
+//    @BindView(main_toolbar)
+//    Toolbar mainToolbar;
     @BindView(R.id.main_framelayout)
     AutoFrameLayout mainFramelayout;
     @BindView(R.id.main_tab)
@@ -34,8 +32,6 @@ public class MainActivity extends BaseActivity {
     MainBottomView photoTab;
     @BindView(R.id.mine_tab)
     MainBottomView mineTab;
-    @BindView(R.id.activity_main)
-    AutoLinearLayout activityMain;
 
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
@@ -56,6 +52,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void initView() {
+//        mainToolbar.setTitle("好奇日报");
         showFragment(0);//默认选择
     }
 
@@ -65,12 +62,15 @@ public class MainActivity extends BaseActivity {
         switch (view.getId()) {
             case R.id.main_tab:
                 showFragment(0);
+//                mainToolbar.setTitle("好奇日报");
                 break;
             case R.id.photo_tab:
                 showFragment(1);
+//                mainToolbar.setTitle("美女");
                 break;
             case R.id.mine_tab:
                 showFragment(2);
+//                mainToolbar.setTitle("我的");
                 break;
         }
     }

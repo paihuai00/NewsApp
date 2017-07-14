@@ -4,11 +4,24 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.csx.newsapp.widget.actionbar.MainTopBar
+            android:layout_width="match_parent"
+            android:layout_height="158px"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            android:id="@+id/main_topabr"
+            app:isShowMiddleTxt="true"
+            app:middleTxt="靓妹子"/>
+    </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/mSwipe">
+        android:id="@+id/mSwipe"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="wrap_content"

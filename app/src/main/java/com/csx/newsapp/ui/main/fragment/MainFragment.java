@@ -5,7 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.widget.Toolbar;
 
 import com.csx.newsapp.R;
 import com.fifedu.rxfiflibrary.base.BaseFragment;
@@ -27,13 +26,13 @@ public class MainFragment extends BaseFragment {
     TabLayout mainTab;
     @BindView(R.id.main_viewpager)
     ViewPager mainViewPager;
-    @BindView(R.id.main_toolbar)
-    Toolbar mainToolbar;
 
     private List<Fragment> fragmentList;
     private TopNewsFragment nbaFragment;
     private PhotoFragment photoFragment;
     private WechatFragment wechatFragment;
+    private ZhiHuFragment zhiHuFragment;
+
 
     private ViewPagerAdapter viewPagerAdapter;
 
@@ -51,8 +50,6 @@ public class MainFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        //设置ToolBar
-//        getActivity().setSupportActionBar(mainToolbar);
 
         initViewPager();
     }
@@ -62,12 +59,14 @@ public class MainFragment extends BaseFragment {
             //添加fragment数据
             fragmentList = new ArrayList<>();
             nbaFragment = new TopNewsFragment();
-            photoFragment = new PhotoFragment();
+//            photoFragment = new PhotoFragment();
             wechatFragment = new WechatFragment();
+            zhiHuFragment = new ZhiHuFragment();
 
             fragmentList.add(wechatFragment);
             fragmentList.add(nbaFragment);
-            fragmentList.add(photoFragment);
+//            fragmentList.add(photoFragment);
+            fragmentList.add(zhiHuFragment);
 
             viewPagerAdapter = new ViewPagerAdapter(getActivity().getSupportFragmentManager(), fragmentList);
 
@@ -86,7 +85,7 @@ public class MainFragment extends BaseFragment {
      */
     class ViewPagerAdapter extends FragmentPagerAdapter {
         private List<Fragment> fragmentList;
-        private String[] strings = new String[]{"微信精选", "今日头条", "美女"};
+        private String[] strings = new String[]{"微信精选", "今日头条", "知乎"};
 
         public ViewPagerAdapter(FragmentManager fm, List<Fragment> fragmentList) {
             super(fm);

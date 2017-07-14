@@ -5,14 +5,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    
-    <android.support.v7.widget.Toolbar
+
+    <com.csx.newsapp.widget.actionbar.MainTopBar
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:id="@+id/main_toolbar"
-        android:background="@color/colorPrimaryDark"
-        app:titleTextColor="@android:color/white"
-        />
+        android:layout_height="@dimen/barhetiht"
+        android:background="@color/colorPrimary"
+        android:id="@+id/main_topabr"
+        app:isShowMiddleTxt="true"
+        app:middleTxt="好奇日报"/>
 
     <android.support.design.widget.TabLayout
         android:layout_width="match_parent"

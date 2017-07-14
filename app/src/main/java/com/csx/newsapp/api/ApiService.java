@@ -3,6 +3,8 @@ package com.csx.newsapp.api;
 import com.csx.newsapp.bean.PhotoBean;
 import com.csx.newsapp.bean.TopNewsBean;
 import com.csx.newsapp.bean.WechatBean;
+import com.csx.newsapp.bean.ZhiHuBean;
+import com.csx.newsapp.bean.ZhiHuInnerBean;
 
 import retrofit2.http.GET;
 import retrofit2.http.Query;
@@ -44,6 +46,20 @@ public interface ApiService {
      */
     @GET
     Observable<PhotoBean> getPhotos(@Url String url);
+
+    /**
+     * 知乎
+     * http://news-at.zhihu.om/api/4/news/latest
+     */
+    @GET("latest")
+    Observable<ZhiHuBean> getKnows();
+
+    /**
+     * 知乎，点击进入的界面，后面的id 需要根据传入的id更改
+     * http://news-at.zhihu.cm/api/4/news/9520494
+     */
+    @GET
+    Observable<ZhiHuInnerBean> getKnowsInners(@Url String url);
 
 //    //登陆 usr_name=2016010101&usr_pwd=123456&role_enname=student
 //    @GET("userCenter/userLogin")
