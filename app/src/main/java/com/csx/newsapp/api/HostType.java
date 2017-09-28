@@ -23,6 +23,8 @@ public class HostType {
      */
     public static final int TYPE_COUNT = 1;
 
+
+
     /**
      * 微信精选的host
      */
